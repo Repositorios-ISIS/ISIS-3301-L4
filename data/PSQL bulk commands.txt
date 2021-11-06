@@ -1,0 +1,87 @@
+#Para los datos de muestra
+
+copy city 
+(City_Key, City, State_Province, Country, Continent, Sales_Territory, Region, Subregion, Latest_Recorded_Population) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\dimension_city_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy customer 
+(Customer_Key, Customer, Bill_To_Customer, Category, Buying_Group, Primary_Contact, Postal_Code) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\dimension_customer_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy employee 
+(Employee_Key, Employee, Preferred_Name, Is_Salesperson) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\dimension_employee_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy date_table 
+(Date_key, Day_Number, Day_val, Month_val, Short_Month, Calendar_Month_Number, Calendar_Year, Fiscal_Month_Number, Fiscal_Year) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\dimension_date_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy stockitem 
+(Stock_Item_Key, Stock_Item, Color, Selling_Package, Buying_Package, Brand, Size_val, Lead_Time_Days, Quantity_Per_Outer, Is_Chiller_Stock, Tax_Rate, Unit_Price, Recommended_Retail_Price, Typical_Weight_Per_Unit) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\dimension_stoc_kitem_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy fact_order 
+(Order_Key, City_Key, Customer_Key, Stock_Item_Key, Order_Date_Key, Picked_Date_Key, Salesperson_Key, Picker_Key, Package, Quantity, Unit_Price, Tax_Rate, Total_Excluding_Tax, Tax_Amount, Total_Including_Tax) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Muestra\fact_order_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+#Para los datos completos
+
+copy city 
+(City_Key, City, State_Province, Country, Continent, Sales_Territory, Region, Subregion, Latest_Recorded_Population) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_city_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy customer 
+(Customer_Key, Customer, Bill_To_Customer, Category, Buying_Group, Primary_Contact, Postal_Code) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_customer_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy employee 
+(Employee_Key, Employee, Preferred_Name, Is_Salesperson) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_employee_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy date_table 
+(Date_key, Day_Number, Day_val, Month_val, Short_Month, Calendar_Month_Number, Calendar_Year, Fiscal_Month_Number, Fiscal_Year) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_date_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy stockitem 
+(Stock_Item_Key, Stock_Item, Color, Selling_Package, Buying_Package, Brand, Size_val, Lead_Time_Days, Quantity_Per_Outer, Is_Chiller_Stock, Tax_Rate, Unit_Price, Recommended_Retail_Price, Typical_Weight_Per_Unit) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_stock_item_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;
+
+copy fact_order 
+(Order_Key, City_Key, Customer_Key, Stock_Item_Key, Order_Date_Key, Picked_Date_Key, Salesperson_Key, Picker_Key, Package, Quantity, Unit_Price, Tax_Rate, Total_Excluding_Tax, Tax_Amount, Total_Including_Tax) 
+from 'F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\fact_order_preprocessed.csv' 
+DELIMITER ',' 
+CSV 
+HEADER;

@@ -1,0 +1,13 @@
+DELETE FROM fact_order;
+DELETE FROM date_table;
+DELETE FROM stockitem;
+DELETE FROM employee;
+DELETE FROM customer;
+DELETE FROM city;
+
+DROP TABLE IF EXISTS fact_order;
+DROP TABLE IF EXISTS date_table;
+DROP TABLE IF EXISTS stockitem;
+DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS city;
