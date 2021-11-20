@@ -597,7 +597,9 @@ Tax_Rate DECIMAL,
 Total_Excluding_Tax DECIMAL,
 Tax_Amount DECIMAL,
 Total_Including_Tax DECIMAL
-);</sql>
+);
+
+</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
