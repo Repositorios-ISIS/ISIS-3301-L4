@@ -548,7 +548,7 @@ Fiscal_Year INT
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>CREATE TABLE IF NOT EXISTS stockitem_historia(
+      <sql>CREATE TABLE IF NOT EXISTS stockitem(
 Stock_Item_Key INT,
 WWI_Stock_Item_ID INT,
 Stock_Item VARCHAR(200),
