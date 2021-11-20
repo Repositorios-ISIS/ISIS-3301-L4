@@ -548,8 +548,9 @@ Fiscal_Year INT
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>CREATE TABLE IF NOT EXISTS stockitem(
-Stock_Item_Key INT PRIMARY KEY,
+      <sql>CREATE TABLE IF NOT EXISTS stockitem_historia(
+Stock_Item_Key INT,
+WWI_Stock_Item_ID INT,
 Stock_Item VARCHAR(200),
 Color VARCHAR(50),
 Selling_Package VARCHAR(50),
@@ -562,8 +563,13 @@ Is_Chiller_Stock BOOLEAN,
 Tax_Rate DECIMAL,
 Unit_Price DECIMAL,
 Recommended_Retail_Price DECIMAL,
-Typical_Weight_Per_Unit DECIMAL
-);</sql>
+Typical_Weight_Per_Unit DECIMAL,
+tk_stock_item INT,
+_Version INT,
+Date_from DATE,
+Date_to DATE
+);
+</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>

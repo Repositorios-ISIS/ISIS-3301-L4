@@ -504,7 +504,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>F:\Semestre 6\Semestre 6 Inteligencia de Negocios\ISIS-3301-L4\data\Completos\dimension_stock_item_preprocessed.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/data/Completos/dimension_stock_item_preprocessed.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
